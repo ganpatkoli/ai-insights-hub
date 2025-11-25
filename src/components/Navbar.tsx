@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Brain, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { ThemeToggle } from "./ThemeToggle";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,6 +33,7 @@ export const Navbar = () => {
             <Link to="/" className="text-sm font-medium hover:text-primary transition-colors">
               About
             </Link>
+            <ThemeToggle />
             <Button size="sm">Subscribe</Button>
           </div>
 
@@ -57,6 +59,10 @@ export const Navbar = () => {
             <Link to="/" className="block text-sm font-medium hover:text-primary transition-colors">
               About
             </Link>
+            <div className="flex items-center gap-3">
+              <span className="text-sm">Theme:</span>
+              <ThemeToggle />
+            </div>
             <Button size="sm" className="w-full">Subscribe</Button>
           </div>
         )}
