@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Hero } from "@/components/Hero";
 import { FeaturedPost } from "@/components/FeaturedPost";
 import { CategorySection } from "@/components/CategorySection";
@@ -7,11 +6,8 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Separator } from "@/components/ui/separator";
 import { blogPosts } from "@/data/blogPosts";
-import { useNavigate } from "react-router-dom";
 
 const Index = () => {
-  const navigate = useNavigate();
-  const [, setSelectedCategory] = useState("All");
 
   const featuredPost = blogPosts[0];
   const aiInfoPosts = blogPosts.filter(post => post.category === "AI Info");
@@ -19,9 +15,7 @@ const Index = () => {
   const aiToolsPosts = blogPosts.filter(post => post.category === "AI Tools");
   const aiHacksPosts = blogPosts.filter(post => post.category === "AI Hacks");
 
-  const handleViewAll = (category: string) => {
-    setSelectedCategory(category);
-    // Scroll to articles section or implement filtering
+  const handleViewAll = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
@@ -55,7 +49,7 @@ const Index = () => {
           description="Deep dives into AI technology, how models work, and the latest developments in artificial intelligence"
           posts={aiInfoPosts}
           categoryName="AI Info"
-          onViewAll={() => handleViewAll("AI Info")}
+          onViewAll={handleViewAll}
         />
 
         <Separator className="my-8" />
@@ -66,7 +60,7 @@ const Index = () => {
           description="Exploring responsible AI development, ethical considerations, and safety guidelines for AI systems"
           posts={aiSafetyPosts}
           categoryName="AI Safety"
-          onViewAll={() => handleViewAll("AI Safety")}
+          onViewAll={handleViewAll}
         />
 
         <Separator className="my-8" />
@@ -77,7 +71,7 @@ const Index = () => {
           description="Discover powerful AI tools, frameworks, and resources to supercharge your productivity and creativity"
           posts={aiToolsPosts}
           categoryName="AI Tools"
-          onViewAll={() => handleViewAll("AI Tools")}
+          onViewAll={handleViewAll}
         />
 
         <Separator className="my-8" />
@@ -88,7 +82,7 @@ const Index = () => {
           description="Expert tips, prompt engineering techniques, and practical hacks to get the most out of AI models"
           posts={aiHacksPosts}
           categoryName="AI Hacks"
-          onViewAll={() => handleViewAll("AI Hacks")}
+          onViewAll={handleViewAll}
         />
 
         {/* Newsletter Section */}
