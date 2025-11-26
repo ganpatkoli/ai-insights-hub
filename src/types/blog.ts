@@ -3,7 +3,7 @@ export interface BlogPost {
   title: string;
   excerpt: string;
   content: string;
-  category: 'AI Info' | 'AI Safety' | 'AI Tools' | 'AI Hacks';
+  category: 'ai-info' | 'ai-safety' | 'ai-tools' | 'ai-hacks';
   author: string;
   date: string;
   readTime: string;
