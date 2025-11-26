@@ -10,7 +10,7 @@ interface FeaturedPostProps {
 
 export const FeaturedPost = ({ post }: FeaturedPostProps) => {
   return (
-    <div className="relative overflow-hidden rounded-2xl shadow-lg group">
+    <div className="relative overflow-hidden rounded-2xl shadow-lg group animate-fade-in hover-scale">
       <div className="grid md:grid-cols-2 gap-0">
         <div className="aspect-[4/3] md:aspect-auto overflow-hidden">
           <img 

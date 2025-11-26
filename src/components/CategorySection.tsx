@@ -2,16 +2,16 @@ import { BlogPost } from "@/types/blog";
 import { BlogCard } from "./BlogCard";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface CategorySectionProps {
   title: string;
   description: string;
   posts: BlogPost[];
   categoryName: string;
-  onViewAll: () => void;
 }
 
-export const CategorySection = ({ title, description, posts, categoryName, onViewAll }: CategorySectionProps) => {
+export const CategorySection = ({ title, description, posts, categoryName }: CategorySectionProps) => {
   const displayPosts = posts.slice(0, 3);
 
   if (displayPosts.length === 0) return null;
@@ -29,9 +29,11 @@ export const CategorySection = ({ title, description, posts, categoryName, onVie
         </div>
         
         {posts.length > 3 && (
-          <Button variant="outline" onClick={onViewAll} className="group">
-            View All
-            <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
+          <Button variant="outline" asChild className="group">
+            <Link to={`/category/${categoryName}`}>
+              View All
+              <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
+            </Link>
           </Button>
         )}
       </div>

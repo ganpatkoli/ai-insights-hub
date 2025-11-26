@@ -29,10 +29,10 @@ const BlogPost = () => {
   }
 
   const categoryColors = {
-    'AI Info': 'bg-primary/10 text-primary border-primary/20',
-    'AI Safety': 'bg-destructive/10 text-destructive border-destructive/20',
-    'AI Tools': 'bg-accent/10 text-accent border-accent/20',
-    'AI Hacks': 'bg-secondary text-secondary-foreground border-secondary',
+    'ai-info': 'bg-primary/10 text-primary border-primary/20',
+    'ai-safety': 'bg-destructive/10 text-destructive border-destructive/20',
+    'ai-tools': 'bg-accent/10 text-accent border-accent/20',
+    'ai-hacks': 'bg-secondary text-secondary-foreground border-secondary',
   };
 
   return (

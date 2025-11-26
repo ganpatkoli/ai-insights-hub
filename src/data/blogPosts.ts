@@ -22,7 +22,7 @@ At their core, LLMs use transformer architecture, a breakthrough in neural netwo
 ## The Future of LLMs
 
 As models continue to grow in size and sophistication, we're seeing improvements in reasoning, factual accuracy, and task performance. The next generation of LLMs promises even more impressive capabilities while addressing current limitations.`,
-    category: 'AI Info',
+    category: 'ai-info',
     author: 'Sarah Chen',
     date: '2024-01-15',
     readTime: '8 min read',
@@ -54,7 +54,7 @@ The field of AI safety faces several key challenges:
 ## Moving Forward
 
 Organizations worldwide are working on AI safety research, developing frameworks for responsible AI deployment, and creating guidelines for ethical AI development.`,
-    category: 'AI Safety',
+    category: 'ai-safety',
     author: 'Michael Rodriguez',
     date: '2024-01-12',
     readTime: '6 min read',
@@ -91,7 +91,7 @@ Organizations worldwide are working on AI safety research, developing frameworks
 **Replit Ghostwriter**: Full-stack AI coding assistant
 
 Each tool offers unique capabilities that can significantly accelerate your workflow.`,
-    category: 'AI Tools',
+    category: 'ai-tools',
     author: 'Emily Watson',
     date: '2024-01-10',
     readTime: '10 min read',
@@ -142,7 +142,7 @@ Specify desired output format, length, style, or structure.
 - Not specifying output format when needed
 
 Practice makes perfect—experiment with different approaches to find what works best for your use case.`,
-    category: 'AI Hacks',
+    category: 'ai-hacks',
     author: 'David Park',
     date: '2024-01-08',
     readTime: '7 min read',
@@ -183,7 +183,7 @@ Whether you're a developer, business leader, or user, you play a part in shaping
 - Demand transparency
 - Advocate for responsible development
 - Stay informed about AI capabilities and limitations`,
-    category: 'AI Safety',
+    category: 'ai-safety',
     author: 'Dr. Lisa Anderson',
     date: '2024-01-05',
     readTime: '9 min read',
@@ -245,7 +245,7 @@ Process and display AI-generated content appropriately.
 - Consider content moderation
 
 Start small, iterate, and gradually add more sophisticated features as you learn.`,
-    category: 'AI Tools',
+    category: 'ai-tools',
     author: 'Alex Kumar',
     date: '2024-01-03',
     readTime: '12 min read',
