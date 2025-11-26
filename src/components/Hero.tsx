@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-ai.jpg";
 
 export const Hero = () => {
@@ -28,11 +29,15 @@ export const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-            <Button size="lg" className="text-lg px-8 shadow-lg hover:shadow-glow transition-all hover-scale">
-              Explore Articles
+            <Button size="lg" className="text-lg px-8 shadow-lg hover:shadow-glow transition-all hover-scale" asChild>
+              <Link to="/search">
+                Explore Articles
+              </Link>
             </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 hover-scale">
-              About Us
+            <Button size="lg" variant="outline" className="text-lg px-8 hover-scale" asChild>
+              <Link to="/about">
+                About Us
+              </Link>
             </Button>
           </div>
         </div>

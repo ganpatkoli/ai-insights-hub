@@ -16,7 +16,7 @@ export const Navbar = () => {
               <Brain className="w-6 h-6 text-primary-foreground" />
             </div>
             <span className="bg-gradient-hero bg-clip-text text-transparent">
-              AI Insights Hub
+              AIGuardian
             </span>
           </Link>
 
@@ -24,13 +24,10 @@ export const Navbar = () => {
             <Link to="/" className="text-sm font-medium hover:text-primary transition-colors">
               Home
             </Link>
-            <Link to="/" className="text-sm font-medium hover:text-primary transition-colors">
-              Articles
+            <Link to="/search" className="text-sm font-medium hover:text-primary transition-colors">
+              Search
             </Link>
-            <Link to="/" className="text-sm font-medium hover:text-primary transition-colors">
-              Categories
-            </Link>
-            <Link to="/" className="text-sm font-medium hover:text-primary transition-colors">
+            <Link to="/about" className="text-sm font-medium hover:text-primary transition-colors">
               About
             </Link>
             <ThemeToggle />
@@ -47,16 +44,13 @@ export const Navbar = () => {
 
         {isOpen && (
           <div className="md:hidden py-4 space-y-4">
-            <Link to="/" className="block text-sm font-medium hover:text-primary transition-colors">
+            <Link to="/" className="block text-sm font-medium hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>
               Home
             </Link>
-            <Link to="/" className="block text-sm font-medium hover:text-primary transition-colors">
-              Articles
+            <Link to="/search" className="block text-sm font-medium hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>
+              Search
             </Link>
-            <Link to="/" className="block text-sm font-medium hover:text-primary transition-colors">
-              Categories
-            </Link>
-            <Link to="/" className="block text-sm font-medium hover:text-primary transition-colors">
+            <Link to="/about" className="block text-sm font-medium hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>
               About
             </Link>
             <div className="flex items-center gap-3">
